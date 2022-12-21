@@ -31,19 +31,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
     //color select
     const colorSelect = document.getElementById("color-select");
+    const section3 = document.getElementById("section-3");
+
     const changeColor = event => {
-        const section3 = document.getElementById("section-3");
         section3.style.backgroundColor = event.target.value;
     };
 
-    colorSelect.addEventListener("input", changeColor);
+    colorSelect.addEventListener("change", changeColor);
 
     //remove listeners
     const removeListeners = document.getElementById("remove-listeners");
     const remove = () => {
         redInput.removeEventListener("input", changeRed);
         addItem.removeEventListener("click", addLi);
-        colorSelect.removeEventListener("input", changeColor);
+        colorSelect.removeEventListener("change", changeColor);
     };
 
     removeListeners.addEventListener("click", remove);
