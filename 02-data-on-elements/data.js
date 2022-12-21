@@ -2,7 +2,7 @@
 window.addEventListener("DOMContentLoaded", () => {
     //add item to list
     const addButton = document.querySelector("#add");
-    addButton.type = "button";
+    addButton.type = "button"; //prevents refereshing after each press
     const shoppingList = document.querySelector("#shopping-list");
 
     const add = () => {
