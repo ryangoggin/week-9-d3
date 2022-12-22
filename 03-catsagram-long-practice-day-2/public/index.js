@@ -179,6 +179,8 @@ window.onload = () => {
         newComment.style.marginBottom = "5px";
         newComment.style.border = "solid 1px black";
         newComment.style.borderRadius = "5px";
+        newComment.style.backgroundColor = "#006AFF";
+        newComment.style.color = "white";
         commentsUl.append(newComment);
         commentInput.value = "";
     }
