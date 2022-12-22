@@ -125,6 +125,8 @@ const createCommentContainer = () => {
     commentContainer.append(comments);
 }
 
+
+//can define evenListener cb fxns outside of window.onload when more functionality is required
 window.onload = () => {
     initializePage();
 
@@ -154,12 +156,12 @@ window.onload = () => {
     const upvote = event => {
         event.preventDefault();
         clicks++;
-        scoreCount.innerHTML = clicks;
+        scoreCount.innerText = clicks;
     }
     const downvote = event => {
         event.preventDefault();
         clicks--;
-        scoreCount.innerHTML = clicks;
+        scoreCount.innerText = clicks;
     }
 
     upvoteBtn.addEventListener("click", upvote);
