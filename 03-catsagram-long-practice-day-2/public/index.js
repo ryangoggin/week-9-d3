@@ -138,10 +138,8 @@ window.onload = () => {
         clicks = 0
         scoreCount.innerText = clicks;
         const commentLis = document.querySelectorAll("#comments-list > li");
-        if (commentLis) {
-            for (let commentLi of commentLis) {
-                commentLi.remove();
-            }
+        for (let commentLi of commentLis) {
+            commentLi.remove();
         }
     }
 
